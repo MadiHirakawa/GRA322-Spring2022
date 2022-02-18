@@ -5,6 +5,14 @@ html {
     --ltyellow: #FFF7DE;
 }
 
+body {
+    color: var(--dkbrown);
+    font-family: filson-pro,sans-serif;
+    font-size: 14px;
+    font-weight: 200, 500;
+    font-style: normal;
+}
+
 .grid {
     display: grid;
     grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(1rem, 1fr) [full-end];
@@ -26,10 +34,24 @@ header img {
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-top: 80vh;
+}
+
+.hero h2 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width:800px) {
-    .three-column {
+    .two-column {
         display: grid;
         column-gap: 3rem;
         content: center;
