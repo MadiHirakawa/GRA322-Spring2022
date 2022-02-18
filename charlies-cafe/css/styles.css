@@ -1,0 +1,38 @@
+html {
+    --ltbrown: #C4B794;
+    --dkbrown: #382C20;
+    --orange: #E47813;
+    --ltyellow: #FFF7DE;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(1rem, 1fr) [full-end];
+}
+
+header {
+    height: 10vh;
+}
+
+header img {
+    align-content: center;
+    display: inline;
+    height: 5vh;
+}
+
+.hero {
+    background-image: url(https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2674&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+
+@media screen and (min-width:800px) {
+    .three-column {
+        display: grid;
+        column-gap: 3rem;
+        content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
