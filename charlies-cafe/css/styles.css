@@ -23,8 +23,8 @@ header {
 }
 
 header img {
-    align-content: center;
-    display: inline;
+    background-color: beige;
+    display: inline-flex;
     height: 5vh;
 }
 
@@ -33,6 +33,7 @@ header img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: block;    
     height: 75vh;
     text-align: center;
 }
@@ -48,6 +49,26 @@ header img {
     letter-spacing: 1px;
     font-weight: 200;
     text-transform: uppercase;
+}
+
+.about-img {
+    overflow-x:scroll;
+    overflow-y:hidden;
+    width: 98vw;
+}
+
+.about-img ul {
+    list-style: none; 
+    display: block;
+    white-space:nowrap;
+}
+
+.about-img li {
+    display: inline-block;
+    /* height: 100px;  */
+    max-height: 150px;
+    object-fit: contain;
+    object-position: center;;
 }
 
 @media screen and (min-width:800px) {
