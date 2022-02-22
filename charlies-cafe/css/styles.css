@@ -51,6 +51,12 @@ header img {
     text-transform: uppercase;
 }
 
+.shops img {
+    display: grid;
+    grid-column: 2;
+    max-width: 85vw;
+}
+
 .about-img {
     overflow-x:scroll;
     overflow-y:hidden;
