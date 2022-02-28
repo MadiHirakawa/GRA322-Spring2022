@@ -11,37 +11,37 @@
   <!-- Load Styles -->
   <link rel="stylesheet" href="https://use.typekit.net/kik6ybt.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <!-- Add your content here -->
   
-    <header class="two-column">
-      <div>
-        <a href="#home"><img src="img/Charlie's-Logo-02.png" alt="Charlie's Cafe Logo"></a>
-        <a href="#home"><img src="img/Charlie's-Logo-03.png" alt="Charlie's Cafe Logo"></a>
-        <a href="#"><i class="fa-solid fa-bars"><img src="img/bars-solid.svg" alt="hamburger menu"></i></a>
-      </div>
+    <header>
+        <a href="#home"><img class="script-logo" src="img/Charlie's-Logo-02.png" alt="Charlie's Cafe Logo"></a>
+        <a href="#home"><img class="logo" src="img/Charlie's-Logo-03.png" alt="Charlie's Cafe Logo"></a>
+        <a href="#"><p><i class="fa-solid fa-bars"></i></p></a>
     </header>
 
-    <section class="hero">
+    <section class="hero-container">
+        <div class="hero">
+          <img class="hero-img" src="img/hero-image.jpeg" alt="making coffee">
+        </div>
         <h1>Charlie's Cafe</h1>
-        <h2>ASU Design School</h2>
+        <h4>ASU Design School</h4>
     </section>
 
     <!-- Menu Section -->
-    <section>
-      <h1>Menu</h1>
+    <section class="grid">
+      <h2>Menu</h2>
       <hr>
+      <h3>Coffee</h3>
       <!-- coffee -->
       <table>
         <tr>
-          <td><h2>Coffee</h2></td>
-        </tr>
-        <tr>
-          <td>Drip Coffee</td>
-          <td>$3.00/4.00</td>
+          <td class="menu-col-1">Drip Coffee</td>
+          <td class="menu-col-2">$3.00/4.00</td>
         </tr>
         <tr>
           <td>Espresso</td>
@@ -85,16 +85,14 @@
         </tr>
       </table>
       <!-- Other Drinks -->
+      <h3>Other Drinks</h3>
       <table>
         <tr>
-          <td><h2>Other Drinks</h2></td>
-        </tr>
-        <tr>
-          <td>
+          <td class="menu-col-1">
             Tea <br>
-            <p>passion tea/white/black/green/matcha green tea/blended</p>
+            <p>passion tea / white / black / green / matcha green tea / blended</p>
           </td>
-          <td>$3.00/4.00</td>
+          <td class="menu-col-2">$3.00/4.00</td>
         </tr>
           <tr>
             <td>Seasonal Smoothies</td>
@@ -110,49 +108,43 @@
           </tr>
       </table>
       <!-- Alt Milks -->
+      <h3>Alternate Milks</h3>
       <table>
         <tr>
-          <td><h2>Alternate Milks</h2></td>
+          <td class="menu-col-1">Oat</td>
+          <td class="menu-col-2">$0.65</td>
         </tr>
-          <tr>
-            <td>Oat</td>
-            <td>$0.65</td>
-          </tr>
-          <tr>
-            <td>Soy</td>
-            <td>$0.65</td>
-          </tr>
-          <tr>
-            <td>Almond</td>
-            <td>$0.65</td>
-          </tr>
+        <tr>
+          <td>Soy</td>
+          <td>$0.65</td>
+        </tr>
+        <tr>
+          <td>Almond</td>
+          <td>$0.65</td>
+        </tr>
       </table>
       <!-- Drinks on Tap -->
+      <h3>Drinks on Tap</h3>
       <table>
         <tr>
-          <td><h2>Drinks on Tap</h2></td>
+          <td class="menu-col-1">Nitro Cold Brew</td>
+          <td class="menu-col-2">$4.50</td>
         </tr>
-          <tr>
-            <td>Nitro Cold Brew</td>
-            <td>$4.50</td>
-          </tr>
-          <tr>
-            <td>Cold Brew</td>
-            <td>$4.50</td>
-          </tr>
-          <tr>
-            <td>Kombucha</td>
-            <td>$4.50</td>
-          </tr>
+        <tr>
+          <td>Cold Brew</td>
+          <td>$4.50</td>
+        </tr>
+        <tr>
+          <td>Kombucha</td>
+          <td>$4.50</td>
+        </tr>
       </table>
       <!-- Grab n Go -->
+      <h3>Grab n Go</h3>
       <table>
         <tr>
-          <td><h2>Grab n Go</h2></td>
-        </tr>
-        <tr>
-          <td>Soda</td>
-          <td>$1.50</td>
+          <td class="menu-col-1">Soda</td>
+          <td class="menu-col-2">$1.50</td>
         </tr>
         <tr>
          <td>Water</td>
@@ -176,23 +168,25 @@
         </tr>
       </table>
       <!-- Paninis -->
+      <h3>Paninis</h3>
       <table>
         <tr>
-          <td><h2>Paninis</h2></td>
+          <td class="menu-col-1">
+            Italiano <br>
+          </td>
+          <td class="menu-col-2">$7.95</td>
         </tr>
         <tr>
-          <td>
-            Italiano <br>
-            <p>grilled baguette, prosciutto, mozarella, sliced tomato, basil pesto, balsamic vinegar</p>
-          </td>
-          <td>$7.95</td>
+          <p>grilled baguette, prosciutto, mozarella, sliced tomato, basil pesto, balsamic vinegar</p>
         </tr>
         <tr>
           <td>
             Serville <br>
-            <p>grilled baguette, spanish shorizo, mozarella, sliced tomato, roasted red peppers, sun dried tomato pesto, balsamic vinegar</p>
           </td>
           <td>$8.00</td>
+        </tr>
+        <tr>
+          <p>grilled baguette, spanish shorizo, mozarella, sliced tomato, roasted red peppers, sun dried tomato pesto, balsamic vinegar</p>
         </tr>
         <tr>
           <td>
@@ -224,32 +218,30 @@
         </tr>
       </table>
       <!-- Gelato -->
+      <h3>Gelato</h3>
       <table>
         <tr>
-          <td><h2>Gelato</h2></td>
+          <td class="menu-col-1">Small</td>
+          <td class="menu-col-2">$3.75</td>
         </tr>
-          <tr>
-            <td>Small</td>
-            <td>$3.75</td>
-          </tr>
-          <tr>
-            <td>Medium</td>
-            <td>$5.50</td>
-          </tr>
-          <tr>
-            <td>Large</td>
-            <td>$6.25</td>
-          </tr>
-          <tr>
-            <td>Pint</td>
-            <td>$8.00</td>
-          </tr>
-          <tr>
-            <td>
-              Flavors <br>
-              <p>sea salt vanilla honeycomb/pistachio/lemon pie/hazelnut chocolate crunch/mango sorbetto/ mint chocolate chip</p>
-            </td>
-          </tr>
+        <tr>
+          <td>Medium</td>
+          <td>$5.50</td>
+        </tr>
+        <tr>
+          <td>Large</td>
+          <td>$6.25</td>
+        </tr>
+        <tr>
+          <td>Pint</td>
+          <td>$8.00</td>
+        </tr>
+        <tr>
+          <td>
+            Flavors <br>
+            <p>sea salt vanilla honeycomb / pistachio / lemon pie / hazelnut chocolate crunch / mango sorbetto / mint chocolate chip</p>
+          </td>
+        </tr>
       </table>
     </section>
 

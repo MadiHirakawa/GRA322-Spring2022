@@ -1,3 +1,4 @@
+/* General Formatting + Grid */
 html {
     --ltbrown: #C4B794;
     --dkbrown: #382C20;
@@ -13,50 +14,121 @@ body {
     font-style: normal;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(1rem, 1fr) [full-end];
-}
-
-header {
-    height: 10vh;
-}
-
-header img {
-    background-color: beige;
-    display: inline-flex;
-    height: 5vh;
-}
-
-.hero {
-    background-image: url(https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2674&q=80);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;    
-    height: 75vh;
-    text-align: center;
-}
-
-.hero h1 {
+h1 {
     font-size: 2.5rem;
     font-weight: 500;
-    padding-top: 80vh;
 }
 
-.hero h2 {
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: .5rem 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: .25rem;
+    padding: .5rem 0 .25rem 0;
+
+}
+
+h4 {
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 200;
     text-transform: uppercase;
 }
 
+p {
+    font-weight: 200;
+}
+
+hr {
+    border: 1px solid var(--orange);
+    width: 33.33vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(1rem, 1fr) [full-end];
+}
+
+.grid > * {
+    grid-column: main; 
+}
+
+/* Header & NavBar*/
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.script-logo {
+    max-width: 75px;
+    vertical-align: auto;
+}
+
+.logo {
+    max-width: 30px;
+}
+
+.fa-bars {
+    color: var(--dkbrown);
+    max-width: 21px;
+}
+
+/* Hero Section */
+.hero-container {
+    height: 90vh;
+    text-align: center;
+}
+
+.hero {
+    height: 75vh;
+}
+
+.hero-img {
+    display: flex;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.hero-container h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* Menu */
+
+table {
+    
+}
+
+.menu-col-1 {
+    width: 60vw;
+    padding-right: 4rem;
+}
+
+.menu-col-2 {
+    max-width: 25vw;
+    vertical-align: text-top;
+}
+
+/* Shops Section */
 .shops img {
     display: grid;
-    grid-column: 2;
     max-width: 85vw;
 }
 
+/* About Section */
 .about-img {
     overflow-x:scroll;
     overflow-y:hidden;
@@ -74,9 +146,10 @@ header img {
     /* height: 100px;  */
     max-height: 150px;
     object-fit: contain;
-    object-position: center;;
+    object-position: center;
 }
 
+/* Media Queries */
 @media screen and (min-width:800px) {
     .two-column {
         display: grid;

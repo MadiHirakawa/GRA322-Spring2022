@@ -6,4 +6,3 @@ $(document).ready(function(){ //$ = jQuery; .ready = will only run once page is 
         $('nav').slideToggle(); //inside of function = interactivity
     }); 
 }); 
-
