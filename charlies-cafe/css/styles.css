@@ -23,7 +23,7 @@ h2 {
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 500;
-    padding: .5rem 0;
+    padding: .5rem 0 0 0;
     text-transform: uppercase;
 }
 
@@ -47,6 +47,7 @@ p {
 
 hr {
     border: 1px solid var(--orange);
+    margin: 1rem 0;
     width: 33.33vw;
 }
 
@@ -109,7 +110,6 @@ header {
 /* Menu */
 
 table {
-    
 }
 
 .menu-col-1 {
@@ -129,6 +129,10 @@ table {
 }
 
 /* About Section */
+.about p {
+    margin: 1rem 0 2rem 0;
+}
+
 .about-img {
     overflow-x:scroll;
     overflow-y:hidden;
@@ -147,6 +151,18 @@ table {
     max-height: 150px;
     object-fit: contain;
     object-position: center;
+}
+
+/* Footer */
+.footer a {
+    color: var(--ltbrown);
+    display: flex;
+    justify-content: space-between;
+    max-height: 5vh;
+}
+
+.footer-logo {
+    max-width: ;
 }
 
 /* Media Queries */
