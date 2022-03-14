@@ -28,8 +28,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
-    font-weight: .25rem;
+    font-size: 1.25rem;
+    font-weight: 500;
     padding: .5rem 0 .25rem 0;
 
 }
@@ -128,6 +128,18 @@ table {
     max-width: 85vw;
 }
 
+.address-contact {
+    display: flex;
+}
+
+.address {
+    max-width: 50vw;
+}
+
+.contact {
+    max-width: 50vw;
+}
+
 /* About Section */
 .about p {
     margin: 1rem 0 2rem 0;
@@ -154,15 +166,32 @@ table {
 }
 
 /* Footer */
-.footer a {
-    color: var(--ltbrown);
+.footer {
+    background-color: var(--ltyellow);
     display: flex;
-    justify-content: space-between;
-    max-height: 5vh;
+    justify-content: left;
 }
 
 .footer-logo {
-    max-width: ;
+    height: 100%;
+    max-width: 180px;
+}
+
+.footer-elements {
+    display: block;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer a {
+    color: var(--ltbrown);
+    padding-right: 2rem;
 }
 
 /* Media Queries */
