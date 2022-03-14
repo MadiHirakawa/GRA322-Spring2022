@@ -45,6 +45,23 @@ p {
     font-weight: 200;
 }
 
+ul {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    list-style-type: none;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: var(--dkbrown);
+    text-decoration: none;
+}
+
 hr {
     border: 1px solid var(--orange);
     margin: 1rem 0;
@@ -85,7 +102,7 @@ header {
 }
 
 /* Hero Section */
-.hero-container {
+/* .hero-container {
     height: 90vh;
     text-align: center;
 }
@@ -105,6 +122,46 @@ header {
 .hero-container h1 {
     font-size: 2.5rem;
     font-weight: 500;
+}*/
+
+img {
+  max-width: 100%;
+}
+
+.image-1 {
+  display: flex;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.image-2 {
+  display: none;
+  height: 100%;
+}
+
+.desktop-logo {
+    display: none;
+}
+
+.image-1 img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.image-2 img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.main-nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-items {
+    display: none;
 }
 
 /* Menu */
@@ -195,11 +252,50 @@ table {
 }
 
 /* Media Queries */
+/*  for tablet & desktop */
 @media screen and (min-width:800px) {
-    .two-column {
+    .three-column {
         display: grid;
         column-gap: 3rem;
         content: center;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+/* for header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        padding-bottom: 2rem;
+      }
+    .image-1 {
+        display: block;
+        flex-grow: 1;
+        height: 50vw;
+        width: 45vw;
+        object-fit: contain;
+      }
+    .image-2 {
+        display: block;
+        flex-grow: 2;
+        height: 50vw;
+        width: 45vw;
+        object-fit: contain;
+      }
+    .main-nav {
+        display: block;
+        flex-grow: 1;
+        min-width: 15vw;
+      }
+    .script-logo, .logo, .fa-bars {
+        display: none;
+    }
+    .desktop-logo {
+        display: block;
+        max-width: 15vw;
+        margin: auto;
+        padding-bottom: 4rem;
+    }
+    .nav-items {
+        display: block;
     }
 }
