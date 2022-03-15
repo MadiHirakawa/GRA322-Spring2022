@@ -6,6 +6,7 @@ html {
     --dkbrown: #382C20;
     --orange: #E47813;
     --ltyellow: #FFF7DE;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,6 +27,7 @@ h2 {
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 500;
+    margin-bottom: 1rem;
     max-width: 40%;
     padding: .5rem 0 0 0;
     text-transform: uppercase;
@@ -47,6 +49,7 @@ h4 {
 
 p {
     font-weight: 200;
+    margin-bottom: 1rem;
 }
 
 ul {
@@ -64,6 +67,12 @@ ul {
 a {
     color: var(--dkbrown);
     text-decoration: none;
+}
+
+
+section {
+    padding: 2rem 0;
+    scroll-margin-top: 2rem;
 }
 
 .grid {
@@ -84,7 +93,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 1rem; */
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
     /* padding-top: 2rem; */
 }
 
@@ -185,7 +194,6 @@ Menu
 *********************************** */
 
 .menu {
-    padding-top: 2rem;
 }
 
 table {
@@ -207,13 +215,12 @@ Shops Section
 *********************************** */ 
 
 .shops {
-    padding-top: 2rem;
 }
 
 .map {
     display: grid;
     max-width: 85vw;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 }
 
 .address-contact {
@@ -232,12 +239,12 @@ Shops Section
 About Section 
 ************************************/
 .about {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
 }
 
 .about p {
-    margin: 1rem 0 2rem 0;
+    /* margin: 1rem 0 2rem 0; */
 }
 
 /* This is for a carousel – no longer used
@@ -300,25 +307,26 @@ Footer
 
 .footer {
     background-color: var(--ltyellow);
-    display: flex;
-    justify-content: left;
+    /* display: inline;
+    justify-content: left; */
 }
 
-.footer-logo {
-    max-width: 80px;
+.footer img {
+    display: inline;
+    height: 80px;
+    margin: auto;
 }
 
 .footer-elements {
-    display: block;
-    justify-content: space-between;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+    display: inline;
+    margin-left: 2rem;
 }
 
 .footer-icons {
     display: flex;
-    justify-content: space-between;
-    margin-right: 10rem;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+    
 }
 
 .footer a {
@@ -425,8 +433,17 @@ Media Queries
     .about {
         padding-bottom: 2rem;
     }
-    .footer-logo {
-        max-width: 140px;
-        padding: 2rem 0;
+
+    /* footer */
+    .footer {
+        padding-left: 2rem;
+    }
+    .footer img {
+        height: 100%;
+        max-width: 200px;
+    }
+    .footer-elements {
+        padding: 0;
+        margin: auto 0;
     }
 }
