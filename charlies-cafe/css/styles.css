@@ -1,4 +1,6 @@
-/* General Formatting + Grid */
+/************************************
+General Formatting + Grid 
+************************************/
 html {
     --ltbrown: #C4B794;
     --dkbrown: #382C20;
@@ -20,9 +22,11 @@ h1 {
 }
 
 h2 {
+    border-bottom: var(--orange) solid 2px;
     font-size: 1.5rem;
     letter-spacing: 1px;
     font-weight: 500;
+    max-width: 40%;
     padding: .5rem 0 0 0;
     text-transform: uppercase;
 }
@@ -62,29 +66,26 @@ a {
     text-decoration: none;
 }
 
-hr {
-    border: 1px solid var(--orange);
-    margin: 1rem 0;
-    width: 33.33vw;
-}
-
 .grid {
     display: grid;
-    grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(1rem, 1fr) [full-end];
+    grid-template-columns: [full-start] minmax(2rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(2rem, 1fr) [full-end];
 }
 
 .grid > * {
     grid-column: main; 
 }
 
-/* Header & NavBar*/
+/************************************
+NavBar & Header
+************************************/
+
 header {
-    align-items: center;
+    /* align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 1rem; */
     padding-bottom: 1rem;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 
 .script-logo {
@@ -101,7 +102,16 @@ header {
     max-width: 21px;
 }
 
-/* Hero Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+/************************************ 
+Hero Section 
+************************************/
+
 /* .hero-container {
     height: 90vh;
     text-align: center;
@@ -128,13 +138,14 @@ img {
   max-width: 100%;
 }
 
-.image-1 {
+/* image-2 visible on mobile */
+.image-2 {
   display: flex;
-  height: 100%;
+  height: 60vh;
   object-fit: cover;
   width: 100%;
 }
-.image-2 {
+.image-1 {
   display: none;
   height: 100%;
 }
@@ -154,35 +165,55 @@ img {
   width: 100%;
 }
 
-.main-nav {
+/* .main-nav {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .nav-items {
     display: none;
 }
 
-/* Menu */
+/* to center the coffee icon */
+.navbar a:nth-child(2) {
+    margin-right: 3rem;
+}
+
+/************************************ 
+Menu 
+*********************************** */
+
+.menu {
+    padding-top: 2rem;
+}
 
 table {
+    width: 100%;
 }
 
 .menu-col-1 {
-    width: 60vw;
+    width: 75%;
     padding-right: 4rem;
 }
 
 .menu-col-2 {
-    max-width: 25vw;
+    width: 25%;
     vertical-align: text-top;
 }
 
-/* Shops Section */
-.shops img {
+/* ***********************************
+Shops Section 
+*********************************** */ 
+
+.shops {
+    padding-top: 2rem;
+}
+
+.map {
     display: grid;
     max-width: 85vw;
+    padding-top: 1rem;
 }
 
 .address-contact {
@@ -197,11 +228,19 @@ table {
     max-width: 50vw;
 }
 
-/* About Section */
+/************************************
+About Section 
+************************************/
+.about {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .about p {
     margin: 1rem 0 2rem 0;
 }
 
+/* This is for a carousel – no longer used
 .about-img {
     overflow-x:scroll;
     overflow-y:hidden;
@@ -216,13 +255,49 @@ table {
 
 .about-img li {
     display: inline-block;
-    /* height: 100px;  */
+    height: 100px; 
     max-height: 150px;
     object-fit: contain;
     object-position: center;
+} */
+
+.about-img {
+    display: grid;
+    gap: .75rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
-/* Footer */
+.about-img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.about-img img:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.about-img img:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.about-img img:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.about-img img:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+/************************************ 
+Footer 
+************************************/
+
 .footer {
     background-color: var(--ltyellow);
     display: flex;
@@ -230,20 +305,20 @@ table {
 }
 
 .footer-logo {
-    height: 100%;
-    max-width: 180px;
+    max-width: 80px;
 }
 
 .footer-elements {
     display: block;
     justify-content: space-between;
-    margin: auto;
-    padding: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
 }
 
 .footer-icons {
     display: flex;
     justify-content: space-between;
+    margin-right: 10rem;
 }
 
 .footer a {
@@ -251,7 +326,10 @@ table {
     padding-right: 2rem;
 }
 
-/* Media Queries */
+/************************************
+Media Queries 
+************************************/
+
 /*  for tablet & desktop */
 @media screen and (min-width:800px) {
     .three-column {
@@ -260,32 +338,38 @@ table {
         content: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    
+    h2 {
+        padding-right: 2rem;
+        text-align: right;
+    }
+
 /* for header */
     header {
         display: flex;
         justify-content: space-between;
         padding: 0;
         padding-bottom: 2rem;
-      }
+    }
     .image-1 {
         display: block;
         flex-grow: 1;
         height: 50vw;
         width: 45vw;
         object-fit: contain;
-      }
+    }
     .image-2 {
         display: block;
         flex-grow: 2;
         height: 50vw;
         width: 45vw;
         object-fit: contain;
-      }
+    }
     .main-nav {
         display: block;
         flex-grow: 1;
         min-width: 15vw;
-      }
+    }
     .script-logo, .logo, .fa-bars {
         display: none;
     }
@@ -297,5 +381,52 @@ table {
     }
     .nav-items {
         display: block;
+    }
+
+    .map {
+        max-width: 33vw;
+    }
+/* menu */
+    .menu-column {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 2fr 2fr 2fr;
+        align-items: start;
+    }
+    .menu-column h2 {
+        border-bottom: none;
+        border-right: var(--orange) solid 2px;
+        min-height: 360px;
+    }
+
+/* shops section */
+    .shops-col {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 2fr 3fr 1fr;
+        align-items: start;
+    }
+    .map {
+        height: 50%;
+        object-fit: cover;
+        padding: none;
+        width: 100%;
+    }
+    .shops-col h2 {
+        border-bottom: none;
+        border-right: var(--orange) solid 2px;
+        min-height: 360px;
+    }
+    .address-contact {
+        display: block;
+    }
+
+    /* about  */
+    .about {
+        padding-bottom: 2rem;
+    }
+    .footer-logo {
+        max-width: 140px;
+        padding: 2rem 0;
     }
 }

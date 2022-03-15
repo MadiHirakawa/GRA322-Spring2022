@@ -18,7 +18,8 @@
 <body>
   <!-- Add your content here -->
   
-    <!-- <header>
+    <!-- this...is wrong 
+      <header>
         <a href="#home"><img class="script-logo" src="img/Charlie's-Logo-02.png" alt="Charlie's Cafe Logo"></a>
         <a href="#home"><img class="logo" src="img/Charlie's-Logo-03.png" alt="Charlie's Cafe Logo"></a>
         <a href="#"><p><i class="fa-solid fa-bars"></i></p></a>
@@ -34,13 +35,17 @@
 
     <header>
       <div class="image-1">
-        <img src="img/hero-image.jpeg" alt="">
+        <img src="img/hero-2.jpeg" alt="pouring coffee">
       </div>
       <div class="main-nav">
         <a href="#home"><img class="desktop-logo" src="img/Charlie's-Logo-01.png" alt=""></a>
-        <a href="#home"><img class="script-logo" src="img/Charlie's-Logo-02.png" alt="Charlie's Cafe Logo"></a>
-        <a href="#home"><img class="logo" src="img/Charlie's-Logo-03.png" alt="Charlie's Cafe Logo"></a>
-        <a href="#"><p><i class="fa-solid fa-bars"></i></p></a>
+        <!-- mobile navbar -->
+        <div class="navbar">
+          <a href="#home"><img class="script-logo" src="img/Charlie's-Logo-02.png" alt="Charlie's Cafe Logo"></a>
+          <a href="#home"><img class="logo" src="img/Charlie's-Logo-03.png" alt="Charlie's Cafe Logo"></a>
+          <a href="#"><p><i class="fa-solid fa-bars"></i></p></a>
+        </div>
+        <!-- end mobile navbar -->
         <div class="nav-items">
           <ul>
             <li><a href="#home">Home</a></li>
@@ -51,267 +56,287 @@
         </div>
       </div>
       <div class="image-2">
-        <img src="img/hero-2.jpeg" alt="">
+        <img src="img/hero-image.jpeg" alt="">
       </div>
     </header>
 
     <!-- Menu Section -->
     <section class="grid" id="menu">
-      <h2>Menu</h2>
-      <hr>
-      <h3>Coffee</h3>
-      <!-- coffee -->
-      <table>
-        <tr>
-          <td class="menu-col-1">Drip Coffee</td>
-          <td class="menu-col-2">$3.00/4.00</td>
-        </tr>
-        <tr>
-          <td>Espresso</td>
-          <td>$3.00</td>
-        </tr>
-        <tr>
-          <td>Macchiato</td>
-          <td>$4.95</td>
-        </tr>
-        <tr>
-          <td>Latte</td>
-          <td>$4.50/5.25</td>
-        </tr>
-        <tr>
-          <td>Cappucino</td>
-          <td>$3.95/4.95</td>
-        </tr>
-        <tr>
-          <td>Americano</td>
-          <td>$3.00/4.00</td>
-        </tr>
-        <tr>
-          <td>Cold Brew</td>
-          <td>$4.50</td>
-        </tr>
-        <tr>
-          <td>Affogato</td>
-          <td>$4.00</td>
-        </tr>
-        <tr>
-          <td>Chai</td>
-          <td>$4.50</td>
-        </tr>
-        <tr>
-          <td>Dirty Chai</td>
-          <td>$5.95</td>
-        </tr>
-        <tr>
-          <td>Mocha</td>
-          <td>$4.00</td>
-        </tr>
-      </table>
-      <!-- Other Drinks -->
-      <h3>Other Drinks</h3>
-      <table>
-        <tr>
-          <td class="menu-col-1">
-            Tea <br>
-            <p>passion tea / white / black / green / matcha green tea / blended</p>
-          </td>
-          <td class="menu-col-2">$3.00/4.00</td>
-        </tr>
-          <tr>
-            <td>Seasonal Smoothies</td>
-            <td>$5.75</td>
-          </tr>
-          <tr>
-            <td>Red Bull Fusions</td>
-            <td>$5.75</td>
-          </tr>
-          <tr>
-            <td>Hot Chocolate</td>
-            <td>$3/4</td>
-          </tr>
-      </table>
-      <!-- Alt Milks -->
-      <h3>Alternate Milks</h3>
-      <table>
-        <tr>
-          <td class="menu-col-1">Oat</td>
-          <td class="menu-col-2">$0.65</td>
-        </tr>
-        <tr>
-          <td>Soy</td>
-          <td>$0.65</td>
-        </tr>
-        <tr>
-          <td>Almond</td>
-          <td>$0.65</td>
-        </tr>
-      </table>
-      <!-- Drinks on Tap -->
-      <h3>Drinks on Tap</h3>
-      <table>
-        <tr>
-          <td class="menu-col-1">Nitro Cold Brew</td>
-          <td class="menu-col-2">$4.50</td>
-        </tr>
-        <tr>
-          <td>Cold Brew</td>
-          <td>$4.50</td>
-        </tr>
-        <tr>
-          <td>Kombucha</td>
-          <td>$4.50</td>
-        </tr>
-      </table>
-      <!-- Grab n Go -->
-      <h3>Grab n Go</h3>
-      <table>
-        <tr>
-          <td class="menu-col-1">Soda</td>
-          <td class="menu-col-2">$1.50</td>
-        </tr>
-        <tr>
-         <td>Water</td>
-         <td>$1.00</td>
-        </tr>
-        <tr>
-          <td>Protein Shake</td>
-          <td>$3.65</td>
-        </tr>
-        <tr>
-          <td>Red Bull</td>
-          <td>$3.95</td>
-        </tr>
-        <tr>
-         <td>Yerba Mate Tea</td>
-         <td>$4.00</td>
-        </tr>
-        <tr>
-          <td>Juice</td>
-          <td>$3.65</td>
-        </tr>
-      </table>
-      <!-- Paninis -->
-      <h3>Paninis</h3>
-      <table>
-        <tr>
-          <td class="menu-col-1">
-            Italiano <br>
-            <p>grilled baguette, prosciutto, mozarella, sliced tomato, basil pesto, balsamic vinegar</p>
-          </td>
-          <td class="menu-col-2">$7.95</td>
-        </tr>
-        <tr>
-          <td class="menu-col-1">
-            Serville <br>
-            <p>grilled baguette, spanish shorizo, mozarella, sliced tomato, roasted red peppers, sun dried tomato pesto, balsamic vinegar</p>
-          </td>
-          <td class="menu-col-2">$8.00</td>
-        </tr>
-        <tr>
-          <td class="menu-col-1">
-            Milano <br>
-            <p>grilled baguette, proschiutto, salami, ham, mozzarella, sliced tomato, pepperoncini, basil pesto, balsamic vinegar</p>
-          </td>
-          <td class="menu-col-2">$7.50</td>
-        </tr>
-        <tr>
-          <td class="menu-col-1">
-            Caprese <br>
-            <p>grilled baguette, mozzarella, sliced tomato, fresh basil, basil pesto, balsamic vinegar</p>
-          </td>
-          <td class="menu-col-2">$7.95</td>
-        </tr>
-        <tr>
-          <td class="menu-col-1">
-            Turkey Florentine<br>
-            <p>grilled baguette, turkey, sliced tomato, spinach, mozzarella, basil pesto, balsamic vinegar</p>
-          </td>
-          <td class="menu-col-2">$8.00</td>
-        </tr>
-        <tr>
-          <td class="menu-col-1">
-            Vegetarian <br>
-            <p>grilled baguette, mozzarella, feta cheese, roasted red peppers, marinated artichokes, sliced tomato, red onion, basil pesto</p>
-          </td>
-          <td class="menu-col-2">$7.50</td>
-        </tr>
-      </table>
-      <!-- Gelato -->
-      <h3>Gelato</h3>
-      <table>
-        <tr>
-          <td class="menu-col-1">Small</td>
-          <td class="menu-col-2">$3.75</td>
-        </tr>
-        <tr>
-          <td>Medium</td>
-          <td>$5.50</td>
-        </tr>
-        <tr>
-          <td>Large</td>
-          <td>$6.25</td>
-        </tr>
-        <tr>
-          <td>Pint</td>
-          <td>$8.00</td>
-        </tr>
-        <tr>
-          <td>
-            Flavors <br>
-            <p>sea salt vanilla honeycomb / pistachio / lemon pie / hazelnut chocolate crunch / mango sorbetto / mint chocolate chip</p>
-          </td>
-        </tr>
-      </table>
+      <div class="menu-column">
+        <div>
+          <h2>Menu</h2>
+        </div>
+        <div>
+          <!-- Coffee -->
+          <h3>Coffee</h3>
+          <table>
+            <tr>
+              <td class="menu-col-1">Drip Coffee</td>
+              <td class="menu-col-2">$3.00/4.00</td>
+            </tr>
+            <tr>
+              <td>Espresso</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Macchiato</td>
+              <td>$4.95</td>
+            </tr>
+            <tr>
+              <td>Latte</td>
+              <td>$4.50/5.25</td>
+            </tr>
+            <tr>
+              <td>Cappucino</td>
+              <td>$3.95/4.95</td>
+            </tr>
+            <tr>
+              <td>Americano</td>
+              <td>$3.00/4.00</td>
+            </tr>
+            <tr>
+              <td>Cold Brew</td>
+              <td>$4.50</td>
+            </tr>
+            <tr>
+              <td>Affogato</td>
+              <td>$4.00</td>
+            </tr>
+            <tr>
+              <td>Chai</td>
+              <td>$4.50</td>
+            </tr>
+            <tr>
+              <td>Dirty Chai</td>
+              <td>$5.95</td>
+            </tr>
+            <tr>
+              <td>Mocha</td>
+              <td>$4.00</td>
+            </tr>
+          </table>
+          <!-- Other Drinks -->
+          <h3>Other Drinks</h3>
+          <table>
+            <tr>
+              <td class="menu-col-1">
+                Tea <br>
+                <p>passion tea / white / black / green / matcha green tea / blended</p>
+              </td>
+              <td class="menu-col-2">$3.00/4.00</td>
+            </tr>
+              <tr>
+                <td>Seasonal Smoothies</td>
+                <td>$5.75</td>
+              </tr>
+              <tr>
+                <td>Red Bull Fusions</td>
+                <td>$5.75</td>
+              </tr>
+              <tr>
+                <td>Hot Chocolate</td>
+                <td>$3/4</td>
+              </tr>
+          </table>
+          <!-- Alt Milks -->
+          <h3>Alternate Milks</h3>
+          <table>
+            <tr>
+              <td class="menu-col-1">Oat</td>
+              <td class="menu-col-2">$0.65</td>
+            </tr>
+            <tr>
+              <td>Soy</td>
+              <td>$0.65</td>
+            </tr>
+            <tr>
+              <td>Almond</td>
+              <td>$0.65</td>
+            </tr>
+          </table>
+          <!-- Drinks on Tap -->
+          <h3>Drinks on Tap</h3>
+          <table>
+            <tr>
+              <td class="menu-col-1">Nitro Cold Brew</td>
+              <td class="menu-col-2">$4.50</td>
+            </tr>
+            <tr>
+              <td>Cold Brew</td>
+              <td>$4.50</td>
+            </tr>
+            <tr>
+              <td>Kombucha</td>
+              <td>$4.50</td>
+            </tr>
+          </table>
+          <!-- Grab n Go -->
+          <h3>Grab n Go</h3>
+          <table>
+            <tr>
+              <td class="menu-col-1">Soda</td>
+              <td class="menu-col-2">$1.50</td>
+            </tr>
+            <tr>
+            <td>Water</td>
+            <td>$1.00</td>
+            </tr>
+            <tr>
+              <td>Protein Shake</td>
+              <td>$3.65</td>
+            </tr>
+            <tr>
+              <td>Red Bull</td>
+              <td>$3.95</td>
+            </tr>
+            <tr>
+            <td>Yerba Mate Tea</td>
+            <td>$4.00</td>
+            </tr>
+            <tr>
+              <td>Juice</td>
+              <td>$3.65</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <!-- Paninis -->
+          <h3>Paninis</h3>
+          <table>
+            <tr>
+              <td class="menu-col-1">
+                Italiano <br>
+                <p>grilled baguette, prosciutto, mozarella, sliced tomato, basil pesto, balsamic vinegar</p>
+              </td>
+              <td class="menu-col-2">$7.95</td>
+            </tr>
+            <tr>
+              <td class="menu-col-1">
+                Serville <br>
+                <p>grilled baguette, spanish shorizo, mozarella, sliced tomato, roasted red peppers, sun dried tomato pesto, balsamic vinegar</p>
+              </td>
+              <td class="menu-col-2">$8.00</td>
+            </tr>
+            <tr>
+              <td class="menu-col-1">
+                Milano <br>
+                <p>grilled baguette, proschiutto, salami, ham, mozzarella, sliced tomato, pepperoncini, basil pesto, balsamic vinegar</p>
+              </td>
+              <td class="menu-col-2">$7.50</td>
+            </tr>
+            <tr>
+              <td class="menu-col-1">
+                Caprese <br>
+                <p>grilled baguette, mozzarella, sliced tomato, fresh basil, basil pesto, balsamic vinegar</p>
+              </td>
+              <td class="menu-col-2">$7.95</td>
+            </tr>
+            <tr>
+              <td class="menu-col-1">
+                Turkey Florentine<br>
+                <p>grilled baguette, turkey, sliced tomato, spinach, mozzarella, basil pesto, balsamic vinegar</p>
+              </td>
+              <td class="menu-col-2">$8.00</td>
+            </tr>
+            <tr>
+              <td class="menu-col-1">
+                Vegetarian <br>
+                <p>grilled baguette, mozzarella, feta cheese, roasted red peppers, marinated artichokes, sliced tomato, red onion, basil pesto</p>
+              </td>
+              <td class="menu-col-2">$7.50</td>
+            </tr>
+          </table>
+          <!-- Gelato -->
+          <h3>Gelato</h3>
+          <table>
+            <tr>
+              <td class="menu-col-1">Small</td>
+              <td class="menu-col-2">$3.75</td>
+            </tr>
+            <tr>
+              <td>Medium</td>
+              <td>$5.50</td>
+            </tr>
+            <tr>
+              <td>Large</td>
+              <td>$6.25</td>
+            </tr>
+            <tr>
+              <td>Pint</td>
+              <td>$8.00</td>
+            </tr>
+            <tr>
+              <td>
+                Flavors <br>
+                <p>sea salt vanilla honeycomb / pistachio / lemon pie / hazelnut chocolate crunch / mango sorbetto / mint chocolate chip</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </section>
 
     <!-- Shops (Location, Hours, Contact) Section -->
     <section class="shops grid" id="shops">
-      <div class="three-column">
-        <h2>Shops</h2>
-        <hr>
-        <img src="img/charlies-map.jpeg" alt="location of Charlie's Cafe">
-        <h3>Hours</h3>
-        <p><strong>Monday – Friday</strong> 7 am – 5 pm</p>
-        <p><strong>Saturday – Sunday</strong> closed</p>
-        <div class="address-contact">
-          <div class="address">
-            <h3>Address</h3>
-            <p>810 S. Forest Mall Tempe, AZ 85281</p>
+      <div class="shops-col">
+        <div>
+          <h2>Shops</h2>
+        </div>
+        <img class="map" src="img/charlies-map.jpeg" alt="location of Charlie's Cafe">
+        <div>
+          <h3>Hours</h3>
+          <p><strong>Monday – Friday</strong> 7 am – 5 pm</p>
+          <p><strong>Saturday – Sunday</strong> closed</p>
+          <div class="address-contact">
+            <div class="address">
+              <h3>Address</h3>
+              <p>810 S. Forest Mall Tempe, AZ 85281</p>
+            </div>
+            <div class="contact">
+              <h3>Contact</h3>
+              <p>480 727 3463</p>
+            </div>
           </div>
-          <div class="contact">
-            <h3>Contact</h3>
-            <p>480 727 3463</p>
-          </div>
-      </div>
+        </div>
       </div>
     </section>
 
     <!-- About Section -->
     <section class="about grid" id="about">
-      <h2>About</h2>
-      <hr>
-      <p>Charlie's Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU! Proudly serving Firecreek Coffee and featuring fresh European sandwiches and baked goods. Come experience the difference! Charlie’s Café is located at the College of Design.</p>
-      <div class="about-img">
-        <ul>
-          <li><img src="img/about-01.jpeg" alt="doing schoolwork at Charlie's"></li>
-          <li><img src="img/about-02.jpeg" alt="cafe environment"></li>
-          <li><img src="img/about-03.jpeg" alt="matcha latte"></li>
-          <li><img src="img/about-04.jpeg" alt="notebook and coffee"></li>
-        </ul>
-      </div>
+      <div class="menu-column">
+        <div>
+          <h2>About</h2>
+        </div>
+        <p>Charlie's Café, one of Sun Devil Dining's local restaurant partners, brings the taste of Europe to ASU! Proudly serving Firecreek Coffee and featuring fresh European sandwiches and baked goods. Come experience the difference! Charlie's Café is located at the College of Design.</p>
+        <div class="about-img">
+            <img src="img/about-02.jpeg" alt="cafe environment"/>
+            <img src="img/about-01.jpeg" alt="doing schoolwork at Charlie"/>
+            <img src="img/about-04.jpeg" alt="notebook and coffee"/>
+            <img src="img/about-03.jpeg" alt="matcha latte"/>
+        </div>
+      </div> 
     </section>
 
     <!-- Footer -->
     <section class="footer grid">
-      <a href="#Home" class="footer-logo grid"><img src="img/Charlie's-Logo-01.png" alt="Charlie's Logo"></a>
-      <div class="footer-elements grid">
-        <div class="footer-icons">
-          <a href=""><i class="fa-solid fa-square-phone-flip"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-square"></i></i></a>
-            <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+
+      <div class="menu-column">
+        
+        <a href="#Home" class="footer-logo"><img src="img/Charlie's-Logo-01.png" alt="Charlie's Logo"></a>
+        
+        <div></div>
+
+        <div class="footer-elements">
+          <div class="footer-icons">
+            <a href=""><i class="fa-solid fa-square-phone-flip"></i></a>
+              <a href=""><i class="fa-brands fa-facebook-square"></i></i></a>
+              <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+          </div>
+          <p>&copy Charlie's Cafe 2022</p>
         </div>
-        <p>&copy Charlie's Cafe 2022</p>
+
       </div>
+
     </section>
 
   <!-- Load Scripts -->
