@@ -11,6 +11,7 @@
   <!-- Load Styles -->
   <link rel="stylesheet" href="https://use.typekit.net/kik6ybt.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -19,16 +20,18 @@
   <!-- Add your content here -->
   
 <header>
-  <nav>
+  <nav class="navbar">
     <h1>Hirakawa</h1>
     <a href="#"><p><i class="fa-solid fa-bars"></i></p></a>
   </nav>
-  <h3>Arizona State University</h3>
-  <h2>Visual Communication Program</h2>
-  <h3>Digital Work</h3>
+  <div class="grid">
+    <h3>Arizona State University</h3>
+    <h2>Visual Communication Program</h2>
+    <h3>Digital Work</h3>
+  </div>
 </header>
 
-<section>
+<section class="grid">
   <!-- repeat this div as necessary -->
   <div class="project-cell">
     <!-- insert imgs later -->
@@ -37,16 +40,24 @@
   </div>
 </section>
 
-<footer>
-  <h3>ASU Program Book</h3>
-  <h6>&copy Madilyn Hirakawa 2022</h6>
+<footer class="grid footer-element">
+  <div>
+    <h3>ASU Program Book</h3>
+    <h5>&copy Madilyn Hirakawa 2022</h5>
+  </div>
   <!-- need to insert links to this later -->
-  <a href="">Rooted</a>
-  <a href="">Labor of Loaf</a>
-  <a href="">Animato</a>
-  <a href="">Responsive Site</a>
-  <a href="">Charlie's Cafe</a>
-  <a href="">Lazy Zebra</a>
+  <div class="links">
+    <div>
+      <a href=""><h5>Rooted</h5></a>
+      <a href=""><h5>Labor of Loaf</h5></a>
+      <a href=""><h5>Animato</h5></a>
+    </div>
+    <div>
+      <a href=""><h5>Responsive Site</h5></a>
+      <a href=""><h5>Charlie's Cafe</h5></a>
+      <a href=""><h5>Lazy Zebra</h5></a>
+    </div>
+  </div>
 </footer>
     
 

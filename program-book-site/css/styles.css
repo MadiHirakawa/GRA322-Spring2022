@@ -1,0 +1,160 @@
+/************************************
+General Formatting + Grid 
+************************************/
+html {
+    --dkblue: #202B38;
+    --ltgray: #E5E5E5;
+    --txtcolor: #202B38;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--txtcolor);
+    font-family: Montserrat, sans-serif;
+    font-size: 24pt;
+    font-weight: 300, 500;
+    font-style: normal;
+}
+
+h1 { /* navbar header */
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2 { /* main project title */
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h3 { /* sub-title labels */
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h4 { /* subheads */
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h5 { /* footer links */
+    font-size: .75rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+img {
+    padding: 1rem 0;
+}
+
+/* all icon styles */
+.fa-solid {
+    color: var(--dkblue);
+    max-width: 21px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [full-start] minmax(2rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(2rem, 1fr) [full-end];
+}
+
+.grid > * {
+    grid-column: main; 
+}
+
+hr {
+    background-color: var(--dkblue); 
+    height: 3px;
+    margin: 2rem 0 1rem 0;
+    width: 20vw;
+    
+}
+
+.current-page {
+    /* apply this class to element link in current page */
+    font-weight: bold;
+}
+
+/************************************
+NavBar & Header
+************************************/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 2rem 0;
+    vertical-align: bottom;
+}
+
+/************************************ 
+Hero Section 
+************************************/
+
+/************************************ 
+Project Overview Section 
+************************************/
+
+.proj-descr {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+/************************************ 
+Process & Finals Section 
+************************************/
+
+.images img{
+    display: inline;
+    padding: .5rem;
+}
+
+/************************************ 
+Bottom Nav Section 
+************************************/
+
+.bottom-nav {
+    padding: 1rem 0;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/************************************ 
+Footer 
+************************************/
+
+footer {
+    background-color: var(--dkblue);
+    color: var(--ltgray);
+    padding: 0 2rem 0rem 2rem;
+}
+
+.footer-element {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-element div {
+    padding-left: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+footer a {
+    color: var(--ltgray);
+    text-decoration: none;
+}
