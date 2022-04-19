@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    background-color: #FAFDFF;
     color: var(--txtcolor);
     font-family: Montserrat, sans-serif;
     font-size: 24pt;
@@ -57,7 +58,6 @@ img {
 /* all icon styles */
 .fa-solid {
     color: var(--dkblue);
-    max-width: 21px;
 }
 
 .grid {
@@ -71,6 +71,7 @@ img {
 
 hr {
     background-color: var(--dkblue); 
+    border: none;
     height: 3px;
     margin: 2rem 0 1rem 0;
     width: 20vw;
@@ -90,7 +91,6 @@ NavBar & Header
     display: flex;
     justify-content: space-between;
     padding: 2rem 0 2rem 0;
-    vertical-align: bottom;
 }
 
 /************************************ 
@@ -113,8 +113,15 @@ Process & Finals Section
 
 .images img{
     display: inline;
+    max-width: 150px;
     padding: .5rem;
 }
+
+table td {
+    padding-bottom: 2rem;
+    padding-right: 5rem;
+
+} 
 
 /************************************ 
 Bottom Nav Section 
@@ -157,4 +164,60 @@ footer {
 footer a {
     color: var(--ltgray);
     text-decoration: none;
+}
+
+/************************************
+Media Queries 
+************************************/
+
+/*  for tablet & desktop */
+@media screen and (min-width:800px) {
+
+    /* general styles */
+    .desktop-grid {
+        display: grid;
+        column-gap: 3rem;
+        content: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    hr {
+        width: 5vw;
+    }
+
+    /* hero and header */
+    .desktop-header {
+        display: flex;
+    }
+
+    .proj-header {
+        max-width: 25vw;
+        padding-right: 1rem;
+    }
+
+    /* project overview */
+    .overview-desktop {
+        display: flex;
+    }
+
+    images img {
+        height: 100%;
+        width: 300px;
+    }
+
+    .rooted-images img{
+        height: 100%;
+        max-width: 300px;
+    }
+
+    /* finals */
+    .finals-desktop {
+        display: inline;
+    }
+
+    /* footer */
+    .footer-element{
+        padding: 5rem;
+    }
+
 }
