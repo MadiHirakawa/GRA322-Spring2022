@@ -65,6 +65,8 @@ img {
     grid-template-columns: [full-start] minmax(2rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(2rem, 1fr) [full-end];
 }
 
+/* @media screen and (max-width: 800px) {
+} */
 .grid > * {
     grid-column: main; 
 }
@@ -111,11 +113,13 @@ Project Overview Section
 Process & Finals Section 
 ************************************/
 
-.images img{
+/* .images img{
     display: inline;
     max-width: 150px;
     padding: .5rem;
-}
+} */
+
+/* redo column layout for mobile */
 
 table td {
     padding-bottom: 2rem;
@@ -146,20 +150,20 @@ footer {
     padding: 0 2rem 0rem 2rem;
 }
 
-.footer-element {
+/* .footer-element {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .footer-element div {
     padding-left: 1rem;
 }
 
-.links {
+/* .links {
     display: flex;
     justify-content: space-between;
     padding-left: 1rem;
-}
+} */
 
 footer a {
     color: var(--ltgray);
@@ -188,6 +192,7 @@ Media Queries
     /* hero and header */
     .desktop-header {
         display: flex;
+        align-items: flex-end;
     }
 
     .proj-header {
@@ -200,24 +205,40 @@ Media Queries
         display: flex;
     }
 
-    images img {
-        height: 100%;
-        width: 300px;
+    .images {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
     }
 
+    /* process */
+    .rev-row {
+        direction: rtl;
+    }
+
+    .flipped-process {
+        text-align: left;
+    }
+/* 
     .rooted-images img{
         height: 100%;
         max-width: 300px;
-    }
+    } */
 
     /* finals */
     .finals-desktop {
-        display: inline;
+
     }
 
     /* footer */
     .footer-element{
         padding: 5rem;
+    }
+
+    .footer-grid {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
