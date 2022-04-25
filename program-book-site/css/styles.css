@@ -100,6 +100,20 @@ Hero Section
 ************************************/
 
 /************************************ 
+Home Project Section 
+************************************/
+
+.project-cell img {
+    
+}
+
+.thumbnail img {
+    background-color: #D2D4D4;
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+/************************************ 
 Project Overview Section 
 ************************************/
 
@@ -198,6 +212,17 @@ Media Queries
     .proj-header {
         max-width: 25vw;
         padding-right: 1rem;
+    }
+
+    /* home page project grid */
+    .desktop-rows {
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .thumbnail img {
+        display: flex;
+        justify-content: space-between;
     }
 
     /* project overview */
