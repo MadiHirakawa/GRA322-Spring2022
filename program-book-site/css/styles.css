@@ -150,13 +150,17 @@ Process & Finals Section
     grid-template-columns: 1fr 1fr;
 }
 
+.wrapper {
+    padding: 1rem 0;
+}
+
+.finals {
+    padding: 2rem 0;
+}
+
 /************************************ 
 Bottom Nav Section 
 ************************************/
-
-.bottom-nav {
-    padding: 1rem 0;
-}
 
 .nav-icons {
     display: flex;
